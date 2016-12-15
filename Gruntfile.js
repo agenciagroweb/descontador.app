@@ -31,6 +31,8 @@ module.exports = function( grunt ) {
                             'angular-route/angular-route.min.js.map',
                             'angular-animate/angular-animate.min.js',
                             'angular-animate/angular-animate.min.js.map',
+                            'angular-cookies/angular-cookies.min.js',
+                            'angular-cookies/angular-cookies.min.js.map',
                             'angular-bootstrap/ui-bootstrap.min.js',
                             'angular-bootstrap/ui-bootstrap-tpls.min.js',
                             'angular-input-masks/angular-input-masks.min.js',
