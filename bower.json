@@ -1,6 +1,6 @@
 {
-  "name": "Fixeads",
-  "description": "Fixeads trial challenge.",
+  "name": "descontador",
+  "description": "Descontador APP Web",
   "main": "",
   "authors": [
     {
@@ -28,6 +28,9 @@
     "bootstrap": "^3.3.7",
     "angular-ui-mask": "^1.8.7",
     "angular-sanitize": "^1.5.8",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "angular-animate": "^1.6.0",
+    "angular-input-masks": "^2.5.0",
+    "angular-cookies": "^1.6.0"
   }
 }
