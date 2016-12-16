@@ -2,6 +2,7 @@ var app = angular.module('descontador', [
     'core.routes',
     'ui.bootstrap',
     'ui.utils.masks',
+    'pathgather.popeye',
     'ngAnimate',
     'ngCookies'
 ]);

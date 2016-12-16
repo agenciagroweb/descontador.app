@@ -1,0 +1,33 @@
+@import "_colors";
+@import "_fonts";
+@import "_forms";
+@import "_icons";
+
+// Theme Core
+body {
+  background: $white;
+  color: $text;
+
+  a {
+    color: $text;
+    text-decoration: none;
+    -webkit-transition: color .2s, background-color .2s;
+    -o-transition: color .2s, background-color .2s;
+    transition: color .2s, background-color .2s;
+
+    &:hover, &:focus, &:active, &:link, &:visited {
+      color: $orange;
+      text-decoration: none;
+    }
+
+    &.button {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 100%;
+      padding: 10px 15px;
+      @include border-radius(4px);
+    }
+  }
+}

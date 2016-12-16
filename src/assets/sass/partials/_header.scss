@@ -1,0 +1,97 @@
+// Header
+header.main {
+  height: 170px;
+  background: $white !important;
+
+  .navbar {
+    padding-top: 3px;
+    border-bottom: 1px solid $light;
+    height: 105px;
+
+    .navbar-toggle {
+      margin: 0;
+      font-size: 33px;
+      border: none;
+    }
+
+    .navbar-brand {
+
+      .logo-navbar {
+        background: url('../images/logos/header-descontador.png') no-repeat center;
+        display: block;
+        width: 267px;
+        height: 65px;
+      }
+    }
+
+    .navbar-collapse {
+
+
+    }
+
+    ul.navbar-nav {
+
+      a {
+        line-height: 24px;
+
+        i {
+          vertical-align: top;
+        }
+      }
+    }
+
+    .navbar-right {
+      margin-top: 30px;
+
+      li {
+        margin-right: 10px;
+
+        a {
+          border: 1px solid $silver;
+          border-radius: 4px;
+          padding: 8px 13px;
+          font-size: 14px;
+          color: $text;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    form.navbar-form {
+      padding: 0;
+      margin: 30px 0 0 50px;
+
+      input, select, textarea {
+        padding: 20px 10px;
+        margin: 0;
+        width: 370px;
+        border-color: $light;
+        color: $text;
+
+        &:hover, &:focus, &:active {
+          border-color: $silver;
+        }
+      }
+
+      .btn {
+        padding: 7px 9px 2px !important;
+        margin-left: -48px !important;
+        background: $orange;
+        color: white;
+        -webkit-border-radius: 4px;
+        -webkit-border-top-left-radius: 0px !important;
+        -webkit-border-bottom-left-radius: 0px !important;
+        -moz-border-radius: 4px;
+        -moz-border-radius-topleft: 0px !important;
+        -moz-border-radius-bottomleft: 0px !important;
+        border-radius: 4px;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+      }
+    }
+  }
+
+}

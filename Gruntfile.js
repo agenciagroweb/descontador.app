@@ -43,7 +43,8 @@ module.exports = function( grunt ) {
                             'underscore/underscore-min.js',
                             'underscore/underscore-min.map',
                             'jquery/dist/jquery.min.js',
-                            'jquery/dist/jquery.min.map'
+                            'jquery/dist/jquery.min.map',
+                            'angular-popeye/release/popeye.min.js'
                         ]
                     }
                 ]

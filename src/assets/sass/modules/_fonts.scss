@@ -1,0 +1,11 @@
+$font-small : 12px;
+$font-default : 14px;
+$font-large : 16px;
+
+$font-h1 : 32px;
+$font-h2 : 28px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-default;
+}

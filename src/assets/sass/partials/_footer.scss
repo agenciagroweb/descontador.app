@@ -1,0 +1,36 @@
+//Footer
+footer.main {
+  background: $dark;
+  height: 315px;
+
+  .logo {
+    background: url('../images/logos/footer-descontador.png') no-repeat center;
+    display: block;
+    width: 366px;
+    height: 343px;
+    position: relative;
+    top: -28px;
+    left: 0;
+  }
+
+  .content {
+    margin: 50px 0 0 0;
+    color: white;
+
+    ul.links {
+      font-size: 18px;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
