@@ -1,6 +1,7 @@
 //Footer
 footer.main {
   background: $dark;
+  font-weight: 100;
   height: 315px;
 
   .logo {
@@ -14,14 +15,14 @@ footer.main {
   }
 
   .content {
-    margin: 50px 0 0 0;
+    margin: 70px 0 0 0;
     color: white;
 
     ul.links {
       font-size: 18px;
 
       li {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
 
         a {
           color: $white;
@@ -30,6 +31,77 @@ footer.main {
             color: $orange;
           }
         }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .social {
+
+      header {
+        margin-bottom: 15px;
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+
+      ul.icons {
+
+        li {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          margin-right: 10px;
+
+          a {
+            display: block;
+            width: 48px;
+            height: 48px;
+          }
+
+          &.facebook {
+            background: url('../images/icons/social-facebook.png') no-repeat;
+          }
+
+          &.facegroup {
+            background: url('../images/icons/social-facegroup.png') no-repeat;
+          }
+
+          &.twitter {
+            background: url('../images/icons/social-twitter.png') no-repeat;
+          }
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .author {
+
+      a {
+        display: inline-block;
+        width: 67px;
+        height: 24px;
+        background: url('../images/logos/footer-groweb.png') no-repeat;
+      }
+    }
+
+  }
+
+  .row {
+
+    &:last-child {
+      margin-top: 30px;
+      font-size: $font-small;
+
+      .row {
+        margin-top: 25px;
+        line-height: 24px;
       }
     }
   }

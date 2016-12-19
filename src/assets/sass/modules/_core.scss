@@ -11,9 +11,9 @@ body {
   a {
     color: $text;
     text-decoration: none;
-    -webkit-transition: color .2s, background-color .2s;
-    -o-transition: color .2s, background-color .2s;
-    transition: color .2s, background-color .2s;
+    -webkit-transition: color .1s, background-color .1s;
+    -o-transition: color .1s, background-color .1s;
+    transition: color .1s, background-color .1s;
 
     &:hover, &:focus, &:active, &:link, &:visited {
       color: $orange;
