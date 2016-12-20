@@ -10,4 +10,142 @@
         </div>
     </div>
 
+    <div class="main container">
+
+        <!-- /begin newsletter -->
+        <div class="newsletter">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="newsletter-icons mail"></i>
+                    <span>Cadastre-se e receba as melhores promoções:</span>
+                </div>
+
+                <div clas="col-md-8">
+                    <form id="newsletter" class="form-inline" action="#">
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome." />
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail." />
+                        </div>
+
+                        <div class="form-group col-md-2">
+                        <button class="btn btn-default">Receber<br>Promoção</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /end newsletter -->
+
+        <!-- /begin filters -->
+        <div class="filters">
+            <div class="row">
+                <div class="col-md-8">
+                    <header>
+                        <h3>Últimas Ofertas</h3>
+                    </header>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4 text-right no-padding order-by">
+                            <span>Ordenar Por:</span>
+                        </div>
+
+                        <div class="col-md-8">
+                            <select class="form-control filter" id="filter">
+                                <option>Mais relevante</option>
+                                <option>Menor preço</option>
+                                <option>Maior preço</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end filters -->
+
+        <!-- /begin products list -->
+        <div class="products">
+            <div class="col-md-3 item no-padding" ng-repeat="i in [1,2,3,4,5,6,7,8]" ng-click="place.go('/place/nome-da-empresa')">
+                <div class="figure" ng-style="{ 'background-image' : 'url(https://i.promobit.com.br/541542734514822414446041405722.jpg)' }">
+                    <span class="verified">
+                        <i class="verified-icon"></i>
+                    </span>
+
+                    <span class="discount">
+                        <span>50% OFF</span>
+                    </span>
+                </div>
+
+                <div class="content">
+                    <p class="desc">Smart TV LED Tela Curva 40" Samsung 40K6500 Full HD 3 HDMI 2 USB</p>
+
+                    <div class="value">
+                        <span class="without-discount">R$ 2.325,76 Por</span>
+                        <span class="with-discount">R$ 1.698,39</span>
+                    </div>
+
+                    <div class="actions">
+                        <div class="row">
+                            <div class="col-md-7 no-padding-right">
+                                <button class="btn btn-default">Comprar</button>
+                            </div>
+
+                            <div class="col-md-5">
+                                <span class="like-box">42</span>
+                                <a href="#"><i class="material-icons">thumb_up</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end products list -->
+
+        <!-- /begin banners list -->
+        <div class="banners">
+
+                <div class="col-md-4 no-padding banner-1 banner-lg">
+                    <p class="title">Informática</p>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 no-padding banner-2 banner-md">
+                            <p class="title">Eletrodomésticos</p>
+                        </div>
+
+                        <div class="col-md-6 no-padding banner-3 banner-md no-border">
+                            <p class="title">Eletrônicos, Áudio e Vídeo</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 no-padding banner-4 banner-md no-border">
+                            <p class="title">Smartphones, Tablets e Telefones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 no-padding banner-5 banner-md">
+                    <p class="title">Utensílio Doméstico</p>
+                </div>
+
+                <div class="col-md-4 no-padding banner-6 banner-md">
+                    <p class="title">Roupas e Calçados</p>
+                </div>
+
+                <div class="col-md-4 no-padding banner-7 banner-md no-border">
+                    <p class="title">Beleza e Saúde</p>
+                </div>
+
+        </div>
+        <!-- /end banners list -->
+
+    </div>
+
 </div>
