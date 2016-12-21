@@ -1,0 +1,164 @@
+//Register
+.register-modal {
+  background: $orange !important;
+  color: $white;
+  font-weight: 300;
+
+  div.register {
+    margin: 30px 60px;
+
+    @media (max-width: $screen-sm) {
+      margin: 15px 30px;
+    }
+
+    header {
+      margin-bottom: 20px;
+      text-align: center;
+
+      h2 {
+        font-size: 26px;
+
+        @media (max-width: $screen-sm) {
+          font-size: 21px;
+        }
+      }
+    }
+
+    .social-network {
+
+      li {
+
+        a {
+          border: 2px solid $white;
+          padding: 7px;
+          display: block;
+          text-align: center;
+          font-size: 21px;
+          color: $white;
+          line-height: 36px;
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
+          @include border-radius(4px);
+
+          span {
+            height: 36px;
+            width: 36px;
+            background: $white;
+            display: inline-block;
+            border-radius: 24px;
+            line-height: 36px;
+            vertical-align: bottom;
+          }
+
+          .symbol {
+            color: $orange;
+            font-size: 48px;
+            margin: -2px;
+          }
+
+          &:hover {
+            background: $orange;
+            color: $dark;
+
+            span {
+              background: $dark;
+
+              .symbol {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div.division {
+      position: relative;
+      display: block;
+      margin: 40px 0;
+      text-align: center;
+      font-size: 21px;
+
+      span {
+        background: $orange;
+        padding: 10px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-top: solid 1px $white;
+        z-index: -1;
+      }
+
+      @media (max-width: $screen-sm) {
+        margin: 20px 0;
+      }
+    }
+
+    form {
+
+      ul {
+
+        li {
+          margin-bottom: 15px;
+
+          input {
+            font-size: 18px;
+            padding: 10px;
+            height: auto;
+            color: $white;
+            background: transparent;
+            border: 2px solid $white;
+            @include border-radius(4px);
+
+            &::-webkit-input-placeholder {
+              color: $white;
+            }
+
+            &:-moz-placeholder {
+              color: $white;
+            }
+
+            &::-moz-placeholder {
+              color: $white;
+            }
+
+            &:-ms-input-placeholder {
+              color: $white;
+            }
+          }
+
+          button {
+            background: $white;
+            color: $dark;
+            display: block;
+            width: 100%;
+            font-size: 21px;
+            font-weight: 300;
+            padding: 10px;
+          }
+
+          a {
+            color: $white;
+          }
+
+          span {
+            display: block;
+            margin: 10px 0;
+            color: $white;
+            font-size: $font-small;
+          }
+
+          &:last-child {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
