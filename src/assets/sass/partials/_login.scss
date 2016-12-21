@@ -10,32 +10,39 @@
 
     div.banner {
       background: $dark;
+      height: 100%;
+      min-height: 650px;
 
       .logo {
-        background: url('../images/logos/footer-descontador.png') no-repeat center;
+        background: url('../images/logos/modal-descontador.png') no-repeat center;
         display: block;
-        width: 366px;
-        height: 343px;
+        width: 465px;
+        height: 375px;
         position: absolute;
-        top: -28px;
-        left: 0;
-      }
-
-    }
-    div.content {
-
-      margin: 30px 60px;
-
-      @media (max-width: $screen-sm) {
-        margin: 15px 30px;
+        bottom: 0;
+        right: -50px;
       }
 
       header {
-        margin-bottom: 20px;
+        padding: 30px;
+
+        h2 {
+          font-size: 21px;
+          color: $white;
+        }
+      }
+
+    }
+
+    div.content {
+      padding: 100px 90px;
+
+      header {
+        margin-bottom: 15px;
         text-align: center;
 
         h2 {
-          font-size: 26px;
+          font-size: 21px;
 
           @media (max-width: $screen-sm) {
             font-size: 21px;
@@ -48,7 +55,8 @@
         li {
 
           a {
-            border: 2px solid $white;
+            background: #3c5699;
+            border: 2px solid #3c5699;
             padding: 7px;
             display: block;
             text-align: center;
@@ -63,7 +71,7 @@
             span {
               height: 36px;
               width: 36px;
-              background: $white;
+              background: $text;
               display: inline-block;
               border-radius: 24px;
               line-height: 36px;
@@ -71,14 +79,14 @@
             }
 
             .symbol {
-              color: $orange;
+              color: $white;
               font-size: 48px;
               margin: -2px;
             }
 
             &:hover {
-              background: $orange;
-              color: $dark;
+              background: transparent;
+              color: #3c5699;
 
               span {
                 background: $dark;
@@ -95,12 +103,13 @@
       div.division {
         position: relative;
         display: block;
-        margin: 40px 0;
+        margin: 20px 0;
         text-align: center;
         font-size: 21px;
+        color: $silver;
 
         span {
-          background: $orange;
+          background: $white;
           padding: 10px;
         }
 
@@ -110,7 +119,7 @@
           top: 50%;
           left: 0;
           right: 0;
-          border-top: solid 1px $white;
+          border-top: solid 1px $silver;
           z-index: -1;
         }
 
@@ -127,49 +136,59 @@
             margin-bottom: 15px;
 
             input {
-              font-size: 18px;
-              padding: 10px;
+              font-size: 14px;
+              padding: 12px;
               height: auto;
-              color: $white;
+              color: $text;
               background: transparent;
-              border: 2px solid $white;
+              border: 2px solid $silver;
               @include border-radius(4px);
 
               &::-webkit-input-placeholder {
-                color: $white;
+                color: $text;
               }
 
               &:-moz-placeholder {
-                color: $white;
+                color: $text;
               }
 
               &::-moz-placeholder {
-                color: $white;
+                color: $text;
               }
 
               &:-ms-input-placeholder {
-                color: $white;
+                color: $text;
               }
             }
 
             button {
-              background: $white;
-              color: $dark;
+              background: $orange;
+              color: $white;
               display: block;
               width: 100%;
               font-size: 21px;
               font-weight: 300;
               padding: 10px;
+              border: 2px solid $orange;
+
+              &:hover {
+                background: transparent;
+                color: $orange;
+              }
             }
 
             a {
-              color: $white;
+              color: $text;
+
+              &:hover {
+                color: $orange;
+              }
             }
 
             span {
               display: block;
               margin: 10px 0;
-              color: $white;
+              color: $text;
               font-size: $font-small;
             }
 

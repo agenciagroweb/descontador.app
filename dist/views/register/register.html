@@ -1,39 +1,51 @@
 <div class="register">
-    <div class="social-network">
+
+    <div class="col-md-6 banner">
         <header>
-            <h2>Acessar com</h2>
+            <h2>Crie sua conta.</h2>
         </header>
 
-        <ul>
-            <li><a href="javascript:void(0)" ng-click=""><span><i class="symbol">circlefacebook</i></span> Facebook</a></li>
-        </ul>
+        <div class="logo"></div>
     </div>
 
-    <div class="division"><span>ou</span></div>
+    <div class="col-md-6 content">
+        <div class="social-network">
+            <header>
+                <h2>Acessar com</h2>
+            </header>
 
-    <form>
-        <header>
-            <h2>Criar uma conta</h2>
-        </header>
+            <ul>
+                <li><a href="javascript:void(0)" ng-click="">Facebook</a></li>
+            </ul>
+        </div>
 
-        <ul>
-            <li>
-                <input type="text" class="form-control" placeholder="Nome">
-            </li>
+        <div class="division"><span>ou</span></div>
 
-            <li>
-                <input type="text" class="form-control" placeholder="E-mail">
-            </li>
+        <form>
+            <header>
+                <h2>Criar uma conta</h2>
+            </header>
 
-            <li>
-                <input type="password" class="form-control" placeholder="Senha">
-                <span>Clicando em "Cadastrar", você aceita os <a href="javascript:void(0)" ng-click="">Termos de Uso.</a></span>
-            </li>
+            <ul>
+                <li>
+                    <input type="text" class="form-control" placeholder="Seu nome">
+                </li>
 
-            <li>
-                <button type="submit" class="btn">Cadastrar</button>
-                <span>Já possui uma conta? <a href="javascript:void(0)" ng-click="login.open()">Entrar.</a></span>
-            </li>
-        </ul>
-    </form>
+                <li>
+                    <input type="text" class="form-control" placeholder="Endereço de e-mail">
+                </li>
+
+                <li>
+                    <input type="password" class="form-control" placeholder="Senha">
+                    <span>Clicando em "Cadastrar", você aceita os <a href="javascript:void(0)" ng-click="">Termos de Uso.</a></span>
+                </li>
+
+                <li>
+                    <button type="submit" class="btn">Cadastrar</button>
+                    <span>Já possui uma conta? <a href="javascript:void(0)" ng-click="login.open()">Entrar.</a></span>
+                </li>
+            </ul>
+        </form>
+    </div>
+
 </div>
