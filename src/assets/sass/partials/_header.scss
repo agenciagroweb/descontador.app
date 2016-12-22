@@ -31,6 +31,7 @@ header.main {
 
     .navbar-right {
       margin-top: 30px;
+      margin-right: 0;
 
       li {
         margin-right: 10px;
@@ -244,8 +245,26 @@ header.main {
             }
           }
         }
+
+        &.send-offer {
+
+          a {
+            background: $blue;
+            color: $white;
+            text-transform: uppercase;
+            font-size: $font-small;
+            font-weight: 300;
+
+            i {
+              margin-left: 10px;
+            }
+          }
+        }
       }
     }
   }
 
+  .navbar-nav.navbar-right {
+    margin-right: 0;
+  }
 }

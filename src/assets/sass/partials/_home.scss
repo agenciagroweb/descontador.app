@@ -285,7 +285,8 @@ div#home {
         border-right: 5px solid $silver;
         color: $white;
         position: relative;
-
+        cursor: pointer;
+        
         &.no-border {
           border-right: none;
         }

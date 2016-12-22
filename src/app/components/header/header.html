@@ -1,6 +1,7 @@
 <header class="main">
+
     <nav class="navbar navbar-fixed-top">
-        <div class="container">
+        <div class="container no-padding">
 
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -13,7 +14,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
-                        <input type="text" class="form-control type" placeholder="shopping, pub">
+                        <input type="text" class="form-control type" placeholder="ps4, playstation">
                     </div>
                     <button type="submit" class="btn" ng-click="search.submit()"><i class="material-icons md-24 action">search</i></button>
                 </form>
@@ -29,7 +30,7 @@
     </nav>
 
     <nav class="sub-navbar navbar-fixed-top">
-        <div class="container">
+        <div class="container no-padding">
             <ul class="nav navbar-nav">
                 <li class="dropdown department">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">menu</i> Departamentos</a></a>
@@ -45,6 +46,10 @@
                     </ul>
                 </li>
                 <li><a href="#">Cupons</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="send-offer"><a href="javascript:void(0)">Enviar Ofertas <i class="material-icons">send</i></a></li>
             </ul>
         </div>
     </nav>
