@@ -1,90 +1,129 @@
-//Forgot Password
+//Login
 .forgot-modal {
-  background: $orange !important;
-  color: $white;
+  background: $white !important;
+  color: $text;
   font-weight: 300;
+  width: 920px !important;
+  padding: 0 !important;
 
   div.forgot {
-    margin: 30px 60px;
 
-    @media (max-width: $screen-sm) {
-      margin: 15px 30px;
-    }
+    div.banner {
+      background: $dark;
+      height: 100%;
+      min-height: 515px;
 
-    header {
-      margin-bottom: 20px;
-      text-align: center;
+      .logo {
+        background: url('../images/logos/modal-descontador.png') no-repeat center;
+        display: block;
+        width: 465px;
+        height: 375px;
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+      }
 
-      h2 {
-        font-size: 26px;
+      header {
+        padding: 50px;
 
-        @media (max-width: $screen-sm) {
-          font-size: 21px;
+        h2 {
+          font-size: 32px;
+          color: $white;
         }
       }
 
-      p {
-        margin: 20px 0;
-        color: $white;
-      }
     }
 
-    form {
+    div.content {
+      padding: 100px 90px;
 
-      ul {
+      header {
+        margin-bottom: 15px;
+        text-align: center;
 
-        li {
-          margin-bottom: 15px;
+        h2 {
+          font-size: 21px;
+          margin-bottom: 20px;
 
-          input {
-            font-size: 18px;
-            padding: 10px;
-            height: auto;
-            color: $white;
-            background: transparent;
-            border: 2px solid $white;
-            @include border-radius(4px);
-
-            &::-webkit-input-placeholder {
-              color: $white;
-            }
-
-            &:-moz-placeholder {
-              color: $white;
-            }
-
-            &::-moz-placeholder {
-              color: $white;
-            }
-
-            &:-ms-input-placeholder {
-              color: $white;
-            }
-          }
-
-          button {
-            background: $white;
-            color: $dark;
-            display: block;
-            width: 100%;
+          @media (max-width: $screen-sm) {
             font-size: 21px;
-            font-weight: 300;
-            padding: 10px;
           }
+        }
 
-          a {
-            color: $white;
-          }
+        p {
+          line-height: 18px;
+          margin-bottom: 30px;
 
-          span {
-            display: block;
-            margin: 10px 0;
-            color: $white;
-            font-size: $font-small;
-          }
+        }
+      }
 
-          &:last-child {
-            margin-top: 30px;
+      form {
+
+        ul {
+
+          li {
+            margin-bottom: 15px;
+
+            input {
+              font-size: 14px;
+              padding: 12px;
+              height: auto;
+              color: $text;
+              background: transparent;
+              border: 2px solid $silver;
+              @include border-radius(4px);
+
+              &::-webkit-input-placeholder {
+                color: $text;
+              }
+
+              &:-moz-placeholder {
+                color: $text;
+              }
+
+              &::-moz-placeholder {
+                color: $text;
+              }
+
+              &:-ms-input-placeholder {
+                color: $text;
+              }
+            }
+
+            button {
+              background: $orange;
+              color: $white;
+              display: block;
+              width: 100%;
+              font-size: 21px;
+              font-weight: 300;
+              padding: 10px;
+              border: 2px solid $orange;
+
+              &:hover {
+                background: transparent;
+                color: $orange;
+              }
+            }
+
+            a {
+              color: $text;
+
+              &:hover {
+                color: $orange;
+              }
+            }
+
+            span {
+              display: block;
+              margin: 10px 0;
+              color: $text;
+              font-size: $font-small;
+            }
+
+            &:last-child {
+              margin-top: 30px;
+            }
           }
         }
       }
