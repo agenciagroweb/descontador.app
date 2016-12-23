@@ -70,7 +70,7 @@
 
         <!-- /begin products list -->
         <div class="products">
-            <div class="col-md-3 item no-padding" ng-repeat="i in [1,2,3,4,5,6,7,8]" ng-click="place.go('/place/nome-da-empresa')">
+            <div class="col-md-3 item no-padding" ng-repeat="i in [1,2,3,4,5,6,7,8]">
                 <div class="figure" ng-style="{ 'background-image' : 'url(https://i.promobit.com.br/541542734514822414446041405722.jpg)' }">
                     <span class="verified">
                         <i class="verified-icon"></i>
@@ -92,7 +92,7 @@
                     <div class="actions">
                         <div class="row">
                             <div class="col-md-7 no-padding-right">
-                                <button class="btn btn-default">Comprar</button>
+                                <button class="btn btn-default btn-store" ng-click="place.go('/offer/nome-da-oferta')">Comprar</button>
                             </div>
 
                             <div class="col-md-5">

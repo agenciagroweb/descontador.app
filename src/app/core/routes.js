@@ -12,6 +12,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'home.controller'
         })
 
+        .when('/offer/:slug', {
+            templateUrl : 'views/offer/offer.html',
+            controller  : 'offer.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);

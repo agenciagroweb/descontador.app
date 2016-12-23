@@ -13,4 +13,11 @@ app.controller('home.controller', [
 
     var base = angular.element("#home");
 
+    $scope.place = {
+
+        go : function(url) {
+            $location.path(url);
+        }
+    };
+
 }]);
