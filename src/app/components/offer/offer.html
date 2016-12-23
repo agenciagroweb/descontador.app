@@ -30,6 +30,140 @@
         </div>
         <!-- /end newsletter -->
 
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Informações Adicionais</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin offer info -->
+        <div class="offer-info">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Suco de cevadiss deixa as pessoas mais interessantiss. Paisis, filhis, espiritis santis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>
+                    <p>Quem manda na minha terra sou Euzis! Casamentiss faiz malandris se pirulitá. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Cevadis im ampola pa arma uma pindureta.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /end offer info -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Comentários</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin comments -->
+        <div class="comments">
+            <div class="comment-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="comment-post" class="default">
+                            <textarea class="comment" placeholder="Escreva seu comentário."></textarea>
+
+                            <ul class="editor left">
+                                <li><i class="material-icons">format_bold</i></li>
+                                <li><i class="material-icons">format_italic</i></li>
+                                <li><i class="material-icons">add_a_photo</i></li>
+                                <li><i class="material-icons">video_call</i></li>
+                            </ul>
+
+                            <div class="actions">
+                                <ul class="editor right">
+                                    <li><i class="material-icons">visibility</i></li>
+                                </ul>
+
+                                <button class="btn btn-default btn-store">Publicar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-response">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="response" ng-repeat="i in [1,2]">
+
+                            <div class="author">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <figure>
+                                            <img class="img-circle" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-11">
+                                        <div class="info">
+                                            <h2>Montanha Soares Pinto</h2>
+                                            <span>@m0nts <em>5 dias atrás</em></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end comments -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Ofertas Relacionadas</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin products list -->
+        <div class="products">
+            <div class="col-md-3 item no-padding" ng-repeat="i in [1,2,3,4]">
+                <div class="figure" ng-style="{ 'background-image' : 'url(https://i.promobit.com.br/541542734514822414446041405722.jpg)' }">
+                    <span class="verified">
+                        <i class="verified-icon"></i>
+                    </span>
+
+                    <span class="discount">
+                        <span>50% OFF</span>
+                    </span>
+                </div>
+
+                <div class="content">
+                    <p class="desc">Smart TV LED Tela Curva 40" Samsung 40K6500 Full HD 3 HDMI 2 USB</p>
+
+                    <div class="value">
+                        <span class="without-discount">R$ 2.325,76 Por</span>
+                        <span class="with-discount">R$ 1.698,39</span>
+                    </div>
+
+                    <div class="actions">
+                        <div class="row">
+                            <div class="col-md-7 no-padding-right">
+                                <button class="btn btn-default btn-store" ng-click="place.go('/offer/nome-da-oferta')">Comprar</button>
+                            </div>
+
+                            <div class="col-md-5">
+                                <span class="like-box">42</span>
+                                <a href="#"><i class="material-icons">thumb_up</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end products list -->
+
     </div>
 
 </div>

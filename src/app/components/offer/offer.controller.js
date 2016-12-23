@@ -7,8 +7,7 @@ app.controller('offer.controller', [
     '$filter',
     '$window',
     '$http',
-    'auth',
-    'target', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, auth, target) {
+    '$httpParamSerializer', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, $httpParamSerializer) {
 
     console.log("Offer");
 

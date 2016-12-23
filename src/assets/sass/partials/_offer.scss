@@ -5,5 +5,148 @@ div#offer {
   .main {
     padding: 15px 0;
 
+    .offer-info {
+      background: $white;
+      padding: 30px;
+      margin: 15px 0;
+
+      p {
+        margin-bottom: 20px;
+        line-height: 18px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .comments {
+      background: $white;
+      padding: 30px;
+      margin: 15px 0;
+
+      .comment-box {
+
+        #comment-post {
+
+          textarea.comment {
+            border: 1px solid $silver;
+            max-height: 200px;
+            height: 200px;
+          }
+
+          ul {
+
+            li {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              border: 1px solid $silver;
+              border-radius: 4px;
+              padding: 5px;
+              text-align: center;
+              line-height: 36px;
+              color: $text;
+
+              i {
+                font-size: 24px;
+                cursor: pointer;
+              }
+
+              &.no-border {
+                border: none;
+                line-height: 1;
+                width: auto;
+                padding: 0;
+              }
+
+              &:hover {
+                background: $dark;
+                color: $white;
+                border: 1px solid $dark;
+              }
+            }
+
+            &.editor {
+              margin: 20px 0;
+            }
+
+            &.left {
+              float: left;
+            }
+
+            &.right {
+              float: right;
+            }
+          }
+
+          .actions {
+
+            ul {
+
+              li {
+
+              }
+            }
+          }
+        }
+      }
+
+      .comment-response {
+        background: $silver;
+        padding: 30px;
+        margin: 15px 0;
+        border-radius: 4px;
+
+        .response {
+          display: block;
+          clear: both;
+          margin: 0 0 20px 0;
+
+          .author {
+
+            figure {
+
+              img {
+                border: 2px solid $green;
+              }
+            }
+
+            .info {
+              margin: 10px 0;
+
+              h2 {
+                font-size: 21px;
+                font-weight: 700;
+                color: $green;
+              }
+
+              span {
+                display: block;
+                margin: 5px 0;
+                font-weight: 700;
+
+                em {
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+
+          p {
+            clear: both;
+            display: block;
+            background: $white;
+            padding: 20px;;
+            margin-top: 20px;
+            border-radius: 4px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 }
