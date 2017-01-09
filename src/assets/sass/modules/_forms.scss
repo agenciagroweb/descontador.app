@@ -54,11 +54,18 @@ textarea {
   width: 100%;
   line-height: 14px;
 
-  &:hover {
+  &:hover, &:active {
     border: 2px solid $green;
     background: transparent;
     color: $green;
   }
+
+  &:active, &:focus {
+    color: $green;
+    background-color: transparent;
+    border-color: $green;
+  }
+
 }
 
 form.default {
