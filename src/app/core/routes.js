@@ -27,6 +27,10 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'terms.controller'
         })
 
+        .when('/privacy-policy', {
+            templateUrl : 'views/policy/policy.html',
+            controller  : 'policy.controller'
+        })
 
         .when('/faq', {
             templateUrl : 'views/faq/faq.html',
