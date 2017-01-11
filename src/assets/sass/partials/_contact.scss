@@ -1,0 +1,164 @@
+// Contact
+div#contact {
+  padding: 15px 0;
+  background: $silver;
+
+  .content {
+    margin: 15px 0;
+    background: $white;
+    @include border-radius(4px);
+
+    .info {
+      padding: 80px 40px;
+
+      header {
+
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          color: $dark;
+
+          span.line-box {
+            display: block;
+            width: 30%;
+            height: 5px;
+            background: $dark;
+            margin-top: 40px;
+          }
+        }
+      }
+
+      a {
+        font-weight: 700;
+        color: $dark;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      ul.social {
+        margin: 30px 0 50px 0;
+
+        li {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          margin-right: 10px;
+
+          a {
+            display: block;
+            width: 48px;
+            height: 48px;
+          }
+
+          &.facebook {
+            background: url('../images/icons/social-facebook-dark.png') no-repeat;
+          }
+
+          &.facegroup {
+            background: url('../images/icons/social-facegroup-dark.png') no-repeat;
+          }
+
+          &.twitter {
+            background: url('../images/icons/social-twitter-dark.png') no-repeat;
+          }
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+
+      ul.links {
+        margin: 165px 0 0 0;
+
+        li {
+          font-size: 18px;
+          margin-bottom: 12px;
+
+          a {
+            font-weight: 400;
+          }
+
+          &.active {
+
+            a {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+
+    .form {
+      color: $white;
+      background: $dark url('../images/misc/contact-us-background.png') repeat;
+      @include border-radius(0px 4px 4px 0px);
+
+      form {
+
+        .form-group {
+          padding: 0 40px;
+
+          &:first-child {
+            padding: 60px 40px 0 40px;
+          }
+
+          &:last-child {
+            padding: 0;
+            margin: 0;
+          }
+        }
+
+        label {
+          margin: 20px 0 10px 0;
+          font-weight: 700;
+          color: $orange;
+        }
+
+        input, textarea {
+          border: none;
+          background: transparent;
+          padding: 10px 0;
+          color: $white;
+
+          &::-webkit-input-placeholder {
+            color: $white;
+          }
+
+          &:-moz-placeholder {
+            color: $white;
+          }
+
+          &::-moz-placeholder {
+            color: $white;
+          }
+
+          &:-ms-input-placeholder {
+            color: $white;
+          }
+        }
+
+        textarea {
+          resize: none;
+          height: 320px;
+        }
+
+        .btn-default {
+          border: none;
+          width: 100%;
+          font-size: 30px;
+          font-weight: 700;
+          color: $white;
+          padding: 10px;
+          background: #f8b900 -webkit-linear-gradient(-80deg, #fce138, #f8b900); /* For Safari 5.1 to 6.0 */
+          background: #f8b900 -o-linear-gradient(-80deg, #fce138, #f8b900); /* For Opera 11.1 to 12.0 */
+          background: #f8b900 -moz-linear-gradient(-80deg, #fce138, #f8b900); /* For Firefox 3.6 to 15 */
+          background: #f8b900 linear-gradient(-80deg, #fce138, #f8b900); /* Standard syntax */
+          @include border-radius(0);
+        }
+      }
+    }
+  }
+}
