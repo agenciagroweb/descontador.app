@@ -17,6 +17,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'offer.controller'
         })
 
+        .when('/about-us', {
+            templateUrl : 'views/about/about.html',
+            controller  : 'about.controller'
+        })
+
         .when('/contact-us', {
             templateUrl : 'views/contact/contact.html',
             controller  : 'contact.controller'

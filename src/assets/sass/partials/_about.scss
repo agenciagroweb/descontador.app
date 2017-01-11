@@ -1,0 +1,110 @@
+// About
+div#about {
+  padding: 15px 0;
+  background: $silver;
+
+  .content {
+    margin: 15px 0;
+
+    .a {
+
+      .icon {
+        width: 96px;
+        height: 137px;
+        background: url('../images/icons/about-icon-1.png');
+        position: absolute;
+        top: 35px;
+        right: 150px;
+      }
+    }
+
+    .b {
+
+      .icon {
+        width: 96px;
+        height: 137px;
+        background: url('../images/icons/about-icon-2.png');
+        position: absolute;
+        top: 35px;
+        right: 150px;
+      }
+    }
+
+    .c {
+
+      .icon {
+        width: 96px;
+        height: 137px;
+        background: url('../images/icons/about-icon-3.png');
+        position: absolute;
+        top: 35px;
+        right: 150px;
+      }
+    }
+
+    .d {
+      background: #f8b900;
+      background-image: url('../images/misc/about-eletronics.png'), -webkit-linear-gradient(90deg, #f08f0c, #fcd90c); /* For Safari 5.1 to 6.0 */
+      background-image: url('../images/misc/about-eletronics.png'), -o-linear-gradient(90deg, #f08f0c, #fcd90c); /* For Opera 11.1 to 12.0 */
+      background-image: url('../images/misc/about-eletronics.png'), -moz-linear-gradient(90deg, #f08f0c, #fcd90c); /* For Firefox 3.6 to 15 */
+      background-image: url('../images/misc/about-eletronics.png'), linear-gradient(90deg, #f08f0c, #fcd90c); /* Standard syntax */
+      background-position: left top;
+      background-repeat: no-repeat;
+      height: 395px;
+      position: relative;
+
+      .icon {
+        width: 96px;
+        height: 137px;
+        background: url('../images/icons/about-icon-4.png');
+        position: absolute;
+        top: 35px;
+        right: 150px;
+      }
+
+      p.title {
+        font-size: 30px;
+        width: 320px;
+        position: absolute;
+        top: 200px;
+        right: 35px;
+      }
+
+      p.desc {
+        font-size: 12px;
+        width: 275px;
+        position: absolute;
+        top: 320px;
+        right: 75px;
+        line-height: 18px;
+      }
+    }
+
+    .e {
+      position: relative;
+      background: -webkit-linear-gradient(90deg, #ee7f0c, #facd0c);
+      background: -o-linear-gradient(90deg, #ee7f0c, #facd0c);
+      background: -moz-linear-gradient(90deg, #ee7f0c, #facd0c);
+      background: linear-gradient(90deg, #ee7f0c, #facd0c);
+      height: 600px;
+
+      .image {
+        position: absolute;
+        top: -61px;
+        height: 661px;
+        width: 100%;
+        background: url('../images/misc/about-people.png');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+      }
+    }
+
+    p {
+      color: $white;
+
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+}
