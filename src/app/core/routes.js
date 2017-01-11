@@ -22,6 +22,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'contact.controller'
         })
 
+        .when('/faq', {
+            templateUrl : 'views/faq/faq.html',
+            controller  : 'faq.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);

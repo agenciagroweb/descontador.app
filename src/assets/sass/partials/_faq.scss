@@ -1,0 +1,91 @@
+// Faq
+div#faq {
+  padding: 15px 0;
+  background: $silver;
+
+  .content {
+    margin: 15px 0;
+    background: $white;
+    @include border-radius(4px);
+
+    .info {
+      padding: 80px 40px;
+
+      header {
+
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          color: $dark;
+
+          span.line-box {
+            display: block;
+            width: 30%;
+            height: 5px;
+            background: $dark;
+            margin-top: 40px;
+          }
+        }
+      }
+
+      a {
+        font-weight: 700;
+        color: $dark;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      ul.links {
+        margin: 660px 0 0 0;
+
+        li {
+          font-size: 18px;
+          margin-bottom: 12px;
+
+          a {
+            font-weight: 400;
+          }
+
+          &.active {
+
+            a {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+
+    .questions {
+      padding: 80px 40px;
+      border-left: 1px solid $silver;
+
+      ul {
+
+        li {
+          margin-bottom: 40px;
+
+          header {
+            margin-bottom: 20px;
+
+            h2 {
+              font-size: 18px;
+              font-weight: 700;
+              color: $dark;
+            }
+          }
+
+          p {
+            line-height: 18px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
