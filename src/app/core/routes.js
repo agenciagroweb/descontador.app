@@ -22,6 +22,12 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'contact.controller'
         })
 
+        .when('/terms', {
+            templateUrl : 'views/terms/terms.html',
+            controller  : 'terms.controller'
+        })
+
+
         .when('/faq', {
             templateUrl : 'views/faq/faq.html',
             controller  : 'faq.controller'
