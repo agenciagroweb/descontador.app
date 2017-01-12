@@ -1,0 +1,154 @@
+<div id="coupons" page="coupons">
+
+    <div class="main container">
+
+        <!-- /begin newsletter -->
+        <div class="newsletter">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="newsletter-icons mail"></i>
+                    <span>Cadastre-se e receba as melhores promoções:</span>
+                </div>
+
+                <div clas="col-md-8">
+                    <form id="newsletter" class="form-inline" action="#">
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome." />
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail." />
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <button class="btn btn-default">Receber<br>Promoção</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /end newsletter -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Últimos Cupons</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin content -->
+        <div class="coupons-newest">
+            <ul>
+                <li ng-repeat="i in [1,2,3,4]" class="company netshoes col-md-3 item no-padding">
+                    <div class="figure" ng-style="{ 'background-image' : 'url(http://localhost/assets/images/icons/store-americanas-400.png)' }">
+                        <span class="verified">
+                            <i class="verified-icon"></i>
+                        </span>
+                    </div>
+
+                    <div class="content">
+                        <p class="desc">R$15 de desconto nas compras acima de R$200</p>
+
+                        <div class="actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-default btn-store">Resgatar Cupom</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /end content -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Lojas mais Populares</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin content -->
+        <div class="coupons-available">
+            <ul>
+                <li ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]" class="company netshoes">
+                    <a href="#">
+                        <div class="figure" ng-style="{ 'background-image' : 'url(http://localhost/assets/images/icons/store-americanas-96.png)' }">
+                            <span class="verified">
+                                <i class="verified-icon"></i>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /end content -->
+
+        <!-- /begin filters -->
+        <div class="stores filters">
+            <div class="row">
+                <div class="col-md-4">
+                    <header>
+                        <h3>Todas as lojas</h3>
+                    </header>
+                </div>
+
+                <div class="col-md-8 text-right">
+                    <ul>
+                        <li class="active"><a href="#">A</a></li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
+                        <li><a href="#">E</a></li>
+                        <li><a href="#">F</a></li>
+                        <li><a href="#">G</a></li>
+                        <li><a href="#">H</a></li>
+                        <li><a href="#">I</a></li>
+                        <li><a href="#">J</a></li>
+                        <li><a href="#">K</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">M</a></li>
+                        <li><a href="#">N</a></li>
+                        <li><a href="#">O</a></li>
+                        <li><a href="#">P</a></li>
+                        <li><a href="#">Q</a></li>
+                        <li><a href="#">R</a></li>
+                        <li><a href="#">S</a></li>
+                        <li><a href="#">T</a></li>
+                        <li><a href="#">U</a></li>
+                        <li><a href="#">V</a></li>
+                        <li><a href="#">W</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Y</a></li>
+                        <li><a href="#">Z</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /end filters -->
+
+        <!-- /begin filters -->
+        <div class="stores list">
+            <div class="row no-margin">
+                <div class="col-md-2 title red">
+                    <header>
+                        <h3>A</h3>
+                    </header>
+                </div>
+
+                <div class="col-md-10 content">
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]"><a href="#"><i class="store-icons americanas"></i> Americanas {{i}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /end filters -->
+
+    </div>
+
+</div>
