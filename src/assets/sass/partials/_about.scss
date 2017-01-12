@@ -6,39 +6,69 @@ div#about {
   .content {
     margin: 15px 0;
 
+    .a, .b, .c {
+
+      p.title {
+        font-size: 28px;
+        width: 320px;
+        position: absolute;
+        top: 260px;
+        left: 45px;
+        font-weight: 700;
+      }
+
+      p.desc {
+        font-size: 13px;
+        width: 275px;
+        line-height: 18px;
+        position: absolute;
+        top: 310px;
+        left: 45px;
+      }
+    }
+
     .a {
+      position: relative;
+      height: 455px;
 
       .icon {
-        width: 96px;
-        height: 137px;
+        width: 150px;
+        height: 174px;
         background: url('../images/icons/about-icon-1.png');
         position: absolute;
-        top: 35px;
-        right: 150px;
+        top: 50px;
+        right: 50%;
+        margin-right: -45px;
       }
     }
 
     .b {
+      position: relative;
+      height: 455px;
 
       .icon {
-        width: 96px;
-        height: 137px;
+        width: 144px;
+        height: 144px;
         background: url('../images/icons/about-icon-2.png');
         position: absolute;
-        top: 35px;
-        right: 150px;
+        top: 70px;
+        right: 50%;
+        margin-right: -72px;
       }
     }
 
     .c {
+      position: relative;
+      height: 455px;
 
       .icon {
-        width: 96px;
-        height: 137px;
+        width: 133px;
+        height: 130px;
         background: url('../images/icons/about-icon-3.png');
         position: absolute;
-        top: 35px;
-        right: 150px;
+        top: 80px;
+        right: 50%;
+        margin-right: -66px;
       }
     }
 
@@ -71,10 +101,10 @@ div#about {
       }
 
       p.desc {
-        font-size: 12px;
+        font-size: 13px;
         width: 275px;
         position: absolute;
-        top: 320px;
+        top: 315px;
         right: 75px;
         line-height: 18px;
       }
@@ -96,6 +126,44 @@ div#about {
         background: url('../images/misc/about-people.png');
         background-position: bottom right;
         background-repeat: no-repeat;
+      }
+
+      p.title {
+        font-size: 30px;
+        width: 205px;
+        position: absolute;
+        top: 100px;
+        left: 45px;
+      }
+
+      p.desc {
+        font-size: 13px;
+        width: 155px;
+        position: absolute;
+        top: 185px;
+        left: 45px;
+        line-height: 18px;
+      }
+    }
+
+    .z {
+      background: #f8b900;
+      background-image: url('../images/misc/about-bg.png'), -webkit-linear-gradient(90deg, #ee7f0c, #facd0c); /* For Safari 5.1 to 6.0 */
+      background-image: url('../images/misc/about-bg.png'), -o-linear-gradient(90deg, #ee7f0c, #facd0c); /* For Opera 11.1 to 12.0 */
+      background-image: url('../images/misc/about-bg.png'), -moz-linear-gradient(90deg, #ee7f0c, #facd0c); /* For Firefox 3.6 to 15 */
+      background-image: url('../images/misc/about-bg.png'), linear-gradient(90deg, #ee7f0c, #facd0c); /* Standard syntax */
+
+      background-position: right;
+      background-size: cover;
+
+      header {
+        margin: 40px 30px;
+
+        h2 {
+          font-size: 32px;
+          font-weight: 700;
+          color: $white;
+        }
       }
     }
 
