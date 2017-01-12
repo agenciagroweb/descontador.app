@@ -1,4 +1,4 @@
-<div id="coupons" page="coupons">
+<div id="stores" page="stores">
 
     <div class="main container">
 
@@ -29,64 +29,6 @@
             </div>
         </div>
         <!-- /end newsletter -->
-
-        <!-- /begin subtitle -->
-        <div class="subtitle">
-            <header>
-                <h3>Últimos Cupons</h3>
-            </header>
-        </div>
-        <!-- /end subtitle -->
-
-        <!-- /begin content -->
-        <div class="coupons-newest">
-            <ul>
-                <li ng-repeat="i in [1,2,3,4]" class="company netshoes col-md-3 item no-padding">
-                    <div class="figure" ng-style="{ 'background-image' : 'url(http://localhost/assets/images/icons/store-americanas-400.png)' }">
-                        <span class="verified">
-                            <i class="verified-icon"></i>
-                        </span>
-                    </div>
-
-                    <div class="content">
-                        <p class="desc">R$15 de desconto nas compras acima de R$200</p>
-
-                        <div class="actions">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <button class="btn btn-default btn-store">Resgatar Cupom</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- /end content -->
-
-        <!-- /begin subtitle -->
-        <div class="subtitle">
-            <header>
-                <h3>Lojas mais Populares</h3>
-            </header>
-        </div>
-        <!-- /end subtitle -->
-
-        <!-- /begin content -->
-        <div class="coupons-available">
-            <ul>
-                <li ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]" class="company netshoes">
-                    <a href="#">
-                        <div class="figure" ng-style="{ 'background-image' : 'url(http://localhost/assets/images/icons/store-americanas-96.png)' }">
-                            <span class="verified">
-                                <i class="verified-icon"></i>
-                            </span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- /end content -->
 
         <!-- /begin filters -->
         <div class="stores filters">
@@ -137,6 +79,20 @@
                 <div class="col-md-2 title green">
                     <header>
                         <h3>A</h3>
+                    </header>
+                </div>
+
+                <div class="col-md-10 content">
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]"><a href="#"><i class="store-icons americanas"></i> Americanas {{i}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row no-margin">
+                <div class="col-md-2 title green">
+                    <header>
+                        <h3>B</h3>
                     </header>
                 </div>
 

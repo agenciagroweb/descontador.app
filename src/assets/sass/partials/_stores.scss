@@ -1,7 +1,12 @@
 // List all stores
+div#stores {
+  padding: 15px 0;
+  background: $silver;
+}
+
 .stores {
 
-  &.filters {
+  &.filters, .filters {
     background: $white;
     padding: 20px 30px;
     margin: 15px 0;
@@ -41,7 +46,7 @@
     }
   }
 
-  &.list {
+  &.list, .list {
     margin: 15px 0;
 
     .row {
@@ -63,8 +68,8 @@
           }
         }
 
-        &.red {
-          background: red;
+        &.green {
+          background: $green;
         }
 
       }

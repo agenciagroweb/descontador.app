@@ -12,6 +12,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'home.controller'
         })
 
+        .when('/stores', {
+            templateUrl : 'views/stores/stores.html',
+            controller  : 'stores.controller'
+        })
+
         .when('/coupons', {
             templateUrl : 'views/coupons/coupons.html',
             controller  : 'coupons.controller'
