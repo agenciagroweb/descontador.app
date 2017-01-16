@@ -1,0 +1,11 @@
+// New Offer
+div#new-offer {
+  padding: 15px 0;
+  background: $silver;
+
+  .content {
+    margin: 15px 0;
+    background: $white;
+    @include border-radius(4px);
+  }
+}
