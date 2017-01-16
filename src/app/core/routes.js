@@ -23,8 +23,18 @@ angular.module('core.routes', ['ngRoute']).config([
         })
 
         .when('/new-offer', {
-            templateUrl : 'views/offer/new-offer.html',
-            controller  : 'newoffer.controller'
+            templateUrl : 'views/offer/new.html',
+            controller  : 'new.controller'
+        })
+
+        .when('/new-offer/product', {
+            templateUrl : 'views/offer/product.html',
+            controller  : 'product.controller'
+        })
+
+        .when('/new-offer/coupon', {
+            templateUrl : 'views/offer/coupon.html',
+            controller  : 'coupon.controller'
         })
 
         .when('/offer/:slug', {

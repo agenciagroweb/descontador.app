@@ -1,4 +1,4 @@
-app.controller('new-offer.controller', [
+app.controller('new.controller', [
     '$scope',
     '$location',
     '$routeParams',
@@ -9,9 +9,12 @@ app.controller('new-offer.controller', [
     '$http',
     '$httpParamSerializer', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, $httpParamSerializer) {
 
-    console.log("New Offer");
+    $scope.offer = {
 
-    var base = angular.element("#new-offer");
+        go : function(url) {
+            $location.path(url);
+        }
+    };
 
 }]);
 

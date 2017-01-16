@@ -19,7 +19,7 @@ button, input[type="submit"], input[type="reset"] {
     @include border-radius(4px);
 
     &.black {
-      background: $light;
+      background: $silver;
       color: $white;
     }
   }
@@ -71,6 +71,7 @@ textarea {
 form.default {
 
   .form-group {
+    clear: both;
     margin-bottom: 20px;
 
     label {
@@ -79,11 +80,15 @@ form.default {
     }
 
     input, select, textarea {
-      border-color: $light;
+      border-color: $silver;
 
       &:hover, &:focus, &:active {
-        border-color: $light;
+        border-color: $silver;
       }
+    }
+
+    textarea {
+      border: 1px solid $silver;
     }
 
     select {
@@ -96,7 +101,7 @@ form.default {
       appearance: none;
 
       &:focus, &:active {
-        border-color: $light;
+        border-color: $silver;
       }
     }
 
@@ -153,7 +158,7 @@ form.default {
 
     .control-indicator {
       background-color: #fff;
-      border: 1px solid $light;
+      border: 1px solid $silver;
       display: block;
       position: absolute;
       top: 1px;
@@ -179,6 +184,11 @@ form.default {
     .control-indicator {
       @include border-radius(50%);
     }
+
+    + .radio {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
   }
 
   button {
@@ -195,22 +205,23 @@ form.default {
       @include border-radius(4px);
 
       &.btn-submit {
-        background: transparent;
-        border: 2px solid $orange;
-        color: $light;
+        background: $green;
+        border: 2px solid $green;
+        color: $white;
 
         &:hover {
-          background: $white;
+          background: transparent;
+          color: $green;
         }
       }
 
       &.btn-reset {
         background: transparent;
         border: 2px solid transparent;
-        color: $light;
+        color: $dark;
 
         &:hover {
-          border-color: $light;
+          border-color: $dark;
         }
       }
 
@@ -221,12 +232,12 @@ form.default {
   }
 
   .form-control[readonly] {
-    background: $light;
-    border-color: $light;
+    background: $silver;
+    border-color: $silver;
   }
 
   .form-control[disabled], fieldset[disabled] .form-control {
-    background: $light;
+    background: $silver;
   }
 
   &:after {

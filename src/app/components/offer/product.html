@@ -1,0 +1,126 @@
+<div id="new-offer" page="new-offer">
+
+    <div class="main container no-padding">
+
+        <!-- /begin newsletter -->
+        <div class="newsletter">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="newsletter-icons mail"></i>
+                    <span>Cadastre-se e receba as melhores promoções:</span>
+                </div>
+
+                <div clas="col-md-8">
+                    <form id="newsletter" class="form-inline" action="#">
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome." />
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail." />
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <button class="btn btn-default">Receber<br>Promoção</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /end newsletter -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Inserir Oferta</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin form -->
+        <div class="form-default">
+
+            <div class="alert alert-warning" role="alert">...</div>
+
+            <form class="default">
+                <div class="form-group">
+                    <label for="offer_url">URL da Oferta</label>
+                    <input type="text" class="form-control" id="offer_url" name="offer[url]" ng-model="offer.url">
+                </div>
+
+                <div class="form-group">
+                    <label for="offer_name">Qual é o produto?</label>
+                    <input type="text" class="form-control" id="offer_name" name="offer[name]" ng-model="offer.name">
+                </div>
+
+                <div class="form-group">
+                    <label for="profile_mobile_brand">Qual a categoria do produto ofertado?</label>
+                    <select id="profile_mobile_brand" name="profile[mobile][brand]" class="form-control" ng-model="profile.mobile.brand">
+                        <option value="" selected>Por favor, escolha</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-5 no-padding">
+                        <div class="form-group">
+                            <label for="offer_value">Qual o valor do produto?</label>
+                            <input type="text" class="form-control" id="offer_value" name="offer[value]" ng-model="offer.value">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-1 no-padding">
+                        <div class="form-group">
+                            <label>Necessita de Cupom?</label>
+
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" id="offer_coupon_required" name="offer[coupon][required]" ng-model="offer.coupon.required"> Sim
+                                        <span class="control-indicator"></span>
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" id="offer_coupon_required" name="offer[coupon][required]" ng-model="offer.coupon.required" checked> Não
+                                        <span class="control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 no-padding">
+                        <div class="form-group">
+                            <label for="offer_coupon_code">Código do Cupom</label>
+                            <input type="text" class="form-control" id="offer_coupon_code" name="offer[coupon][code]" ng-model="offer.coupon.code" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="offer_info">Informações Adicionais</label>
+                    <textarea id="offer_info" name="offer[info]" placeholder=""></textarea>
+
+                    <ul class="editor">
+                        <li><i class="material-icons">format_bold</i></li>
+                        <li><i class="material-icons">format_italic</i></li>
+                        <li><i class="material-icons">add_a_photo</i></li>
+                        <li><i class="material-icons">video_call</i></li>
+                    </ul>
+
+                </div>
+
+                <div class="form-group actions">
+                    <button type="reset" class="btn btn-reset">Cancelar</button>
+                    <button type="button" class="btn btn-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <!-- /end form -->
+
+    </div>
+
+</div>
