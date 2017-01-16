@@ -22,6 +22,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'coupons.controller'
         })
 
+        .when('/new-offer', {
+            templateUrl : 'views/offer/new-offer.html',
+            controller  : 'newoffer.controller'
+        })
+
         .when('/offer/:slug', {
             templateUrl : 'views/offer/offer.html',
             controller  : 'offer.controller'

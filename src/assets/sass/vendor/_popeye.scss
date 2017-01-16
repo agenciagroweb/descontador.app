@@ -91,6 +91,7 @@ body.popeye-modal-open {
   text-decoration: none;
   color: inherit;
   font-size: 21px;
+  z-index: 9999;
 }
 
 .popeye-modal-container .popeye-modal a.popeye-close-modal::after{
