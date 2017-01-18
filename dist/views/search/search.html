@@ -1,0 +1,103 @@
+<div id="coupons" page="coupons">
+
+    <div class="main container no-padding">
+
+        <!-- /begin newsletter -->
+        <div class="newsletter">
+            <div class="col-md-4">
+                <i class="newsletter-icons mail"></i>
+                <span>Cadastre-se e receba as melhores promoções:</span>
+            </div>
+
+            <div clas="col-md-8">
+                <form id="newsletter" class="form-inline" action="#">
+
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" id="name" placeholder="Digite seu nome." />
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail." />
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <button class="btn btn-default">Receber<br>Promoção</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /end newsletter -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>15 Resultado(s) para <b>"TAG"</b></h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin products list -->
+        <div class="products">
+            <div class="col-md-3 item no-padding" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+                <div class="figure" ng-style="{ 'background-image' : 'url(https://i.promobit.com.br/541542734514822414446041405722.jpg)' }">
+                    <span class="verified">
+                        <i class="verified-icon"></i>
+                    </span>
+
+                    <span class="discount">
+                        <span>50% OFF</span>
+                    </span>
+                </div>
+
+                <div class="content">
+                    <p class="desc">Smart TV LED Tela Curva 40" Samsung 40K6500 Full HD 3 HDMI 2 USB</p>
+
+                    <div class="value">
+                        <span class="without-discount">R$ 2.325,76 Por</span>
+                        <span class="with-discount">R$ 1.698,39</span>
+                    </div>
+
+                    <div class="actions">
+                        <div class="row">
+                            <div class="col-md-7 no-padding-right">
+                                <button class="btn btn-default btn-store" ng-click="place.go('/offer/nome-da-oferta')">Comprar</button>
+                            </div>
+
+                            <div class="col-md-5">
+                                <span class="like-box">42</span>
+                                <a href="#"><i class="material-icons">thumb_up</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end products list -->
+
+        <!-- /begin subtitle -->
+        <div class="subtitle">
+            <header>
+                <h3>Lojas mais Populares</h3>
+            </header>
+        </div>
+        <!-- /end subtitle -->
+
+        <!-- /begin content -->
+        <div class="coupons-available">
+            <ul>
+                <li ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]" class="company netshoes">
+                    <a href="#">
+                        <div class="figure" ng-style="{ 'background-image' : 'url(http://localhost/assets/images/icons/store-americanas-96.png)' }">
+                            <span class="verified">
+                                <i class="verified-icon"></i>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /end content -->
+
+    </div>
+
+</div>

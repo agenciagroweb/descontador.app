@@ -12,6 +12,23 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'home.controller'
         })
 
+        .when('/search', {
+            templateUrl : 'views/search/search.html',
+            controller  : 'search.controller'
+            // resolve: {
+            //     check : function($location, _search) {
+            //
+            //         if ( ! _search.data($location.search()))
+            //             $location.path('search/404').search({});
+            //     }
+            // }
+        })
+
+        .when('/search/404', {
+            templateUrl : 'views/search/search.404.html',
+            controller  : 'search.controller'
+        })
+
         .when('/stores', {
             templateUrl : 'views/stores/stores.html',
             controller  : 'stores.controller'

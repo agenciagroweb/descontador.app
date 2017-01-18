@@ -74,11 +74,11 @@ app.controller('header.controller', [
     $scope.search = {
 
         fields : {
-            "q" : null,
-            "place" : null
+            "q" : null
         },
 
         submit : function() {
+            console.log("vai");
             $location.path('/search').search($httpParamSerializer(this.fields));
         }
     };
